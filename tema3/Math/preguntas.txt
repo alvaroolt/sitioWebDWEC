@@ -1,0 +1,79 @@
+Preguntas sobre el objeto Math
+
+1.- La propiedad Math.SQRT2 devuelve:
+a - Raíz cuadrada de 2 <--
+b - Raíz cúbica de 2
+c - potencia de 2
+d - Ninguna es correcta
+
+2.- Math.pow(Math.sqrt(2),2) devuelve:
+a - 4
+b - 2 <--
+c - 0
+d - Ninguna es correcta
+
+3.- Math.abs(x) devuelve:
+a - x en números binarios
+b - Raíz cúbica de x
+c - Valor absoluto de x <--
+d - Valor redondeado de x (al entero más cercano)
+
+4.- El método que nos permite redondear un valor al integer más cercano es:
+a - Math.sign()
+b - Math.max()
+c - Math.trunc()
+d - Math.round() <--
+
+5.- ¿Cuáles son métodos de logaritmos?
+a - Math.log(), Math.log10(), Math.E()
+b - Math.log() <--
+c - Math.log(), Math.logE()
+d - Ninguna es correcta
+
+6.- El método que nos permite redondear un valor al integer más cercano hacia abajo es:
+a - Math.floor() <--
+b - Math.min()
+c - Math.trunc()
+d - Math.round()
+
+7.- ¿Math.sqrt("3") funcionaría como si de Math.sqrt(3) se tratase?
+a - Sí <--
+b - No
+
+9.- Math.sign(0) devuelve:
+a - 1
+b - -1
+c - 0 <--
+d Error de compilación
+
+10.- Math.sign(0) == Math.sign("0") == Math.sign('0')
+a - true <--
+b - false
+c - No es posible usar comillas en un método Math
+
+11.- Los métodos Math.cos() y Math.sin() trabajan en:
+a - Radianes <--
+b - Grados
+
+12.- Math.round(3.65) == Math.ceil(3.65)
+a - true <--
+b - false
+c - Math.round y Math.ceil son propiedades, no métodos
+
+13.- Son propiedades:
+a - Math.MIN y Math.MAX
+b - Math.E y Math.PI <--
+c - Math.E y Math.LN
+d - Math.LN10 y Math.ABS
+
+14.- Son métodos:
+a - Math.e(), Math.abs() y Math.sqrt()
+b - Math.sqrt2(), Math.trunc() y Math.sign()
+c - Math.log(), Math.max() y Math.tan() <--
+d - Math.random(), Math.ln10() y Math.pow()
+
+15.- Math:
+a - Es necesario crearlo como objeto para utilizar todas sus propiedades y métodos.
+b - Es un constructor.
+c - Puede invocar todas sus propiedades utilizando Math como objeto, pero no sus métodos.
+d - Puede invocar todas sus propiedades y métodos utilizando Math como un objeto, sin crearlo. <--
