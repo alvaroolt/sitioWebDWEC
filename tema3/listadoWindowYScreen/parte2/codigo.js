@@ -1,11 +1,13 @@
 function iniciar() {
     document.addEventListener("scroll", hacerScroll);
+    //let botones = document.getElementsByTagName("button");
+    //botones[0].addEventListener;
     document.getElementById("bajarLinea").addEventListener("click", bajarLinea);
     document.getElementById("subirLinea").addEventListener("click", subirLinea);
     document.getElementById("bajarPagina").addEventListener("click", bajarPagina);
     document.getElementById("subirPagina").addEventListener("click", subirPagina);
-    document.getElementById("final").addEventListener("click", final);
     document.getElementById("inicio").addEventListener("click", inicio);
+    document.getElementById("final").addEventListener("click", final);
 }
 
 function hacerScroll() {
@@ -35,4 +37,4 @@ function principio() {
     scroll(scrollX, scrollY - document.body.scrollHeight);
 }
 
-window.addEventListener("load", iniciar);
+window.addEventListener("DOMContentLoaded", iniciar);
