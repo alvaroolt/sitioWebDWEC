@@ -20,4 +20,4 @@ function mostrarCronometro() {
     cronometro.innerHTML = horas + ":" + minutos + ":" + segundos + " h";
 }
 
-window.addEventListener("DOMContentLoaded", iniciar);
+window.addEventListener("load", iniciar);

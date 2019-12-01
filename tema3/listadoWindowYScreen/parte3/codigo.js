@@ -10,4 +10,4 @@ function iniciar() {
     info.innerHTML += "Hash: " + location.hash + "<br/>";
 }
 
-window.addEventListener("DOMContentLoaded", iniciar);
+window.addEventListener("load", iniciar);
