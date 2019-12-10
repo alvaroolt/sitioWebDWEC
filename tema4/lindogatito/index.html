@@ -1,0 +1,63 @@
+<!--
+    Crea una clase Gato, y a partir de ella crea tantos gatos como quiera el usuario. 
+    Para ello se parte de una ventana con un botón "Crea lindo gatito"
+    Cada gato tendrá:
+        un nombre
+        una fecha de nacimiento
+        una raza
+        un peso (1-15).
+    Cada vez que se cree un objeto gato aparecerá una ventana nueva con una imagen que cambiará en función de su estado
+    (comiendo, durmiendo y jugando, que es su estado habitual). 
+    El usuario podrá averiguar la edad del gato partiendo de un evento (un click sobre la imagen, un botón edad...)
+    El comportamiento es el siguiente:
+        Cuando el gato juega pierde peso
+        Cuando el gato come gana peso
+        El gato puede morir de inanición o por sobrepeso
+    Recuerda:
+        Evita las cajas de texto: 
+        raza por select, 
+        peso numérico con min y max, 
+        fecha con min y max
+    No se puede usar ni alert ni prompt
+    Hazlo lo más dinámico posible.
+    Utiliza prototype para los métodos
+-->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <title>Lindo gatito</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/Gato.js"></script>
+</head>
+
+<body>
+    <noscript>
+        <p>JavaScript está deshabilitado. Es posible que la página no se visualice correctamente.</p>
+    </noscript>
+    <div id="info">
+        <h1>Lindo gatito</h1>
+        <ul>
+            <li><label>Nombre del gato </label></li>
+            <li><label>Raza </label></li>
+            <li><label>Peso </label></li>
+            <li><label>Fecha de nacimiento </label></li>
+        </ul>
+        <ul>
+            <li><input id="nombre" type="text"></li>
+            <li><input id="raza" type="text"></li>
+            <li><input id="peso" type="number"></li>
+            <li><input id="fechaNacimiento" type="date"></li>
+        </ul>
+        <br/>
+        <button id="crearGato">Crear gato</button>
+        <p id="error"></p>
+    </div>
+
+    <footer>Autor: Álvaro Leiva Toledano</footer>
+</body>
+
+</html>

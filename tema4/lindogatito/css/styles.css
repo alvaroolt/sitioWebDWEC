@@ -1,0 +1,21 @@
+body{
+    font-size: 23px;
+    font-family: Arial;
+}
+
+#info{
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+}
+
+li{
+    margin: 10px 0px 10px 0px;
+}
+
+footer{
+    text-align: end;
+}
