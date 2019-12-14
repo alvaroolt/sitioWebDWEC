@@ -1,26 +1,27 @@
 function iniciar() {
     document.addEventListener("scroll", hacerScroll);
+    //let botones = document.getElementsByTagName("button");
+    //botones[0].addEventListener;
     document.getElementById("bajarLinea").addEventListener("click", bajarLinea);
     document.getElementById("subirLinea").addEventListener("click", subirLinea);
     document.getElementById("bajarPagina").addEventListener("click", bajarPagina);
     document.getElementById("subirPagina").addEventListener("click", subirPagina);
+    document.getElementById("inicio").addEventListener("click", principio);
     document.getElementById("final").addEventListener("click", final);
-    document.getElementById("inicio").addEventListener("click", inicio);
 }
 
 function hacerScroll() {
-    let info = document.getElementById("info");
-    info.innerHTML = "window.scrollX = " + window.scrollX + "<br/>";
-    info.innerHTML += "window.scrollY = " + window.scrollY + "<br/>";
-    info.innerHTML += "window.scrollbars = " + window.scrollbars.visible + "<br/>";
-    //info.innerHTML += "<p>Bajar una línea<button id=\"bajarLinea\">Bajar línea</button></p><p>Subir una línea<button id=\"subirLinea\">Subir línea</button></p><p>Bajar una página<button id=\"bajarPagina\">Bajar página</button></p><p>Subir una página<button id=\"subirPagina\">Subir página</button></p><p>Ir al principio<button id=\"inicio\">Ir al principio</button></p><p>Ir al final<button id=\"final\">Ir al final</button></p>";
+    let info2 = document.getElementById("info2");
+    info2.innerHTML = "window.scrollX = " + window.scrollX + "<br/>";
+    info2.innerHTML += "window.scrollY = " + window.scrollY + "<br/>";
+    info2.innerHTML += "window.scrollbars = " + window.scrollbars.visible + "<br/>";
 }
 
 function bajarLinea() {
-    scroll(scrollX, scrollY + 5);
+    scroll(scrollX, scrollY + 20);
 }
 function subirLinea() {
-    scroll(scrollX, scrollY - 5);
+    scroll(scrollX, scrollY - 20);
 }
 function bajarPagina() {
     scroll(scrollX, scrollY + innerHeight);
@@ -35,4 +36,4 @@ function principio() {
     scroll(scrollX, scrollY - document.body.scrollHeight);
 }
 
-window.addEventListener("load", iniciar);
+window.addEventListener("DOMContentLoaded", iniciar);

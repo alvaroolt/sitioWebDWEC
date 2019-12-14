@@ -22,14 +22,19 @@
     <title>Parte 2 - Window y screen</title>
     <script type="text/javascript" src="codigo.js"></script>
     <style>
-        #info {
+        #info, #info2 {
             position: fixed;
             background: white;
             border: 0.1cm solid;
+            padding: 1%;
+        }
+
+        #info2 {
+            bottom: 40%;
         }
 
         #lorem {
-            width: 1800px;
+            width: 120%;
         }
     </style>
 </head>
@@ -39,13 +44,14 @@
         <p>JavaScript está deshabilitado. Es posible que la página no se visualice correctamente.</p>
     </noscript>
     <div id="info">
-        <p>Bajar una línea<button id="bajarLinea">Bajar línea</button></p>
-        <p>Subir una línea<button id="subirLinea">Subir línea</button></p>
-        <p>Bajar una página<button id="bajarPagina">Bajar página</button></p>
-        <p>Subir una página<button id="subirPagina">Subir página</button></p>
-        <p>Ir al principio<button id="inicio">Ir al principio</button></p>
-        <p>Ir al final<button id="final">Ir al final</button></p>
+            <p><button id="bajarLinea">Bajar línea</button></p>
+            <p><button id="subirLinea">Subir línea</button></p>
+            <p><button id="bajarPagina">Bajar página</button></p>
+            <p><button id="subirPagina">Subir página</button></p>
+            <p><button id="inicio">Ir al principio</button></p>
+            <p><button id="final">Ir al final</button></p>
     </div>
+    <div id="info2"></div>
     <p id="lorem">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
