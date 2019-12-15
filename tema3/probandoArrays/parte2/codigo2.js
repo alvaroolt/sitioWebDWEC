@@ -1,9 +1,5 @@
-let info;
-
-document.addEventListener("DOMContentLoaded", iniciar)
-
 function iniciar() {
-    info = document.getElementById("info");
+    let info = document.getElementById("info");
     mostrarIn();
 }
 
@@ -14,3 +10,5 @@ function mostrarIn() {
     info.innerHTML += "'lopera' en el array: " + ('lopera' in array) + " (no es un índice, es un valor)<br/>";
     info.innerHTML += "length en el array: " + ('length' in array) + " (propiedad)";
 }
+
+document.addEventListener("DOMContentLoaded", iniciar);

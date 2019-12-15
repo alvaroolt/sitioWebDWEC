@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", iniciar);
-
 function iniciar() {
     document.getElementById("ventanas").addEventListener("click", abrirVentana);
 }
 
 function abrirVentana() {
-    let ventana = open("", "Ventana credada mediante botón", "width=300,height=200,top=0,left=0")
+    let ventana = open("", "Ventana creada mediante botón", "width=300,height=200,top=0,left=0")
     let contenido = `
         <!DOCTYPE html>
         <html lang="es">
@@ -34,3 +32,4 @@ function abrirVentana() {
     ventana.document.close();
 }
 
+document.addEventListener("DOMContentLoaded", iniciar);

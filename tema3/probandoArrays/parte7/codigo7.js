@@ -1,9 +1,5 @@
-let info;
-
-document.addEventListener("DOMContentLoaded", iniciar)
-
 function iniciar() {
-    info = document.getElementById("info");
+    let info = document.getElementById("info");
     ejecutarArray();
 }
 
@@ -15,6 +11,8 @@ function ejecutarArray() {
 
 function eliminarUndefined(array) {
     return array.filter(function (valor) {
-        return valor != undefined;
+        return valor != undefined; // devuelve los valores que no sean undefined
     });
 }
+
+document.addEventListener("DOMContentLoaded", iniciar);

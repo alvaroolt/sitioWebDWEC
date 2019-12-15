@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", iniciar);
-
 function iniciar() {
     escribirInfoPagina();
     document.getElementById("cerrarVentana").addEventListener("click", cerrarVentana);
@@ -13,3 +11,5 @@ function escribirInfoPagina() {
 function cerrarVentana() {
     close();
 }
+
+document.addEventListener("DOMContentLoaded", iniciar);

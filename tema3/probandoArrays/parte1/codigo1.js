@@ -1,9 +1,5 @@
-let info;
-
-document.addEventListener("DOMContentLoaded", iniciar)
-
 function iniciar() {
-    info = document.getElementById("info");
+    let info = document.getElementById("info");
     mostrarArray();
 }
 
@@ -14,3 +10,5 @@ function mostrarArray() {
         info.innerHTML += "Valor: " + value + " | Índice: " + index + " | Array: " + array + "<br/>";
     })
 }
+
+document.addEventListener("DOMContentLoaded", iniciar);

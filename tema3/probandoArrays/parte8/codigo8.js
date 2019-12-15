@@ -1,9 +1,5 @@
-let info;
-
-document.addEventListener("DOMContentLoaded", iniciar)
-
 function iniciar() {
-    info = document.getElementById("info");
+    let info = document.getElementById("info");
     info.innerHTML += "Array.prototype.forEach(): Ejecuta la función indicada una vez por cada elemento del array.<br/>";
     info.innerHTML += "Array.prototype.every(): Devuelve true si todos los elementos en el array pasan la condición implementada por la función dada y false si alguno no la cumple.</br>";
     info.innerHTML += "Array.prototype.some(): Devuelve true si algún elemento del array cumple con la condición implementada por la función brindada, y false en caso de que ningún elemento cumpla con dicha condición.</br>";
@@ -26,11 +22,13 @@ function mostrarPruebas() {
             return valor > 10;
         }) + "</br>";
 
-    info.innerHTML += "some(): algún elemento es mayor que 200." +
+    info.innerHTML += "some(): algún elemento es mayor que 200. " +
         +array.some(function (valor) {
-            return valor > 200;
+            return valor > 200; //devuelve boolean, pero con valores numéricos (1 si true, 0 si false)
         }) + "</br>";
 
     let array2 = array.filter(function (valor) { return valor > 60; })
     info.innerHTML += "filter(): Devuelve nuevo array con los valores mayores que 60: " + array2 + "</br>";
 }
+
+document.addEventListener("DOMContentLoaded", iniciar);

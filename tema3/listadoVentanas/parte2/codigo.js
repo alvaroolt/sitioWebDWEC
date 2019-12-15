@@ -1,14 +1,12 @@
-document.addEventListener("DOMContentLoaded", iniciar);
-
 function iniciar() {
     document.getElementById("ventanas").addEventListener("click", abrirVentanas);
 }
 
 function abrirVentanas() {
-    let top = 15;
-    let left = 15;
+    let top = 25;
+    let left = 25;
     for (let i = 1; i < 6; i++) {
-        let ventana = open("", "Ventana (" + i + ") credada mediante botón", "width=300,height=200,top=" + top + ",left=" + left + "");
+        let ventana = open("", "", "width=300,height=200,top=" + top + ",left=" + left + "");
         let contenido = `
         <!DOCTYPE html>
         <html lang="es">
@@ -36,8 +34,9 @@ function abrirVentanas() {
         ventana.document.write(contenido);
         ventana.document.close();
 
-        top += 10;
-        left += 10;
+        top += 20;
+        left += 20;
     }
 }
 
+document.addEventListener("DOMContentLoaded", iniciar);
