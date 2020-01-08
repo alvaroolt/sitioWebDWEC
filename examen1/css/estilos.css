@@ -1,0 +1,20 @@
+/*
+    @author: ALVARO LEIVA TOLEDANO
+*/
+body {
+    font-family: 'Arial';
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#error {
+    color: rgb(175, 42, 42);
+}
