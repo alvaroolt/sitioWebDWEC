@@ -70,8 +70,8 @@ function obtenerDiaSemanaHoy() {
 
 function mensajeMotivador() {
 
-    horas = Number(obtenerHoraActual());
-    minutos = Number(obtenerMinutosActuales());
+    let horas = Number(obtenerHoraActual());
+    let minutos = Number(obtenerMinutosActuales());
     let mensaje = "Son las " + obtenerHora() + ". ";
 
     if (horas > 18 || (horas == 18 && minutos > 0))
