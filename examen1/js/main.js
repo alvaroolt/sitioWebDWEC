@@ -48,6 +48,8 @@ function abrirFormularioEmpleado() {
             <title>Examen DWEC Diciembre 2019 | Álvaro Leiva Toledano | Formulario empleado</title>
             <link rel="stylesheet" type="text/css" href="css/estilos.css">
             <script type="text/javascript" src="parte2/js/ventana.js"></script>
+            <script type="text/javascript" src="parte2/js/validar.js"></script>
+            <script type="text/javascript" src="parte2/js/Empleado.js"></script>
         </head>
     
         <body>
@@ -58,12 +60,13 @@ function abrirFormularioEmpleado() {
             <h2>Examen diciembre 2019</h2>
             <h3>Formulario empleado</h3>
             <ul>
-                <li><label>Nombre empleado </label><input type="text"/></li>
-                <li><label>Fecha de nacimiento </label><input type="date"/></li>
-                <li><label>DNI </label><input type="text"/></li>
+                <li><label>Nombre empleado <input type="text" id="inputNombre"/></label><span id="spanNombre"/></li>
+                <li><label>Fecha de nacimiento <input type="date" id="inputFecha"/></label><span id="spanFecha"/></li>
+                <li><label>DNI <input type="text" id="inputDni"/></label><span id="spanDni"/></li>
+                <span id="spanError"/>
             </ul>
             <br/>
-            <button  id="nuevoEmpleado">Confirmar nuevo empleado</button>
+            <button id="nuevoEmpleado">Confirmar nuevo empleado</button>
             <p id="error"></p>
         </body>
     
