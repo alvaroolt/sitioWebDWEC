@@ -45,7 +45,7 @@ function iniciar() {
     inputDni = document.getElementById("inputDni");
     spanDni = document.getElementById("spanDni");
     spanNombre = document.getElementById("spanNombre");
-    spanFecha = document.getElementById("spanFecha");
+    //spanFecha = document.getElementById("spanFecha");
     spanError = document.getElementById("errorFormulario");
 
     inputDni.addEventListener("blur", validarDni);

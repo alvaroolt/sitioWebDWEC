@@ -8,6 +8,7 @@ function Empleado(nombre, fecha, dni) {
     this.dni = dni;
 }
 
+//Getters
 Empleado.prototype.getNombre = function () {
     return this.nombre;
 }

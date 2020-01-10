@@ -60,9 +60,9 @@ function abrirFormularioEmpleado() {
             <h2>Examen diciembre 2019</h2>
             <h3>Formulario empleado</h3>
             <ul>
-                <li><label>Nombre empleado <input type="text" id="inputNombre"/></label><span id="spanNombre"/></li>
-                <li><label>Fecha de nacimiento <input type="date" id="inputFecha"/></label><span id="spanFecha"/></li>
-                <li><label>DNI <input type="text" id="inputDni"/></label><span id="spanDni"/></li>
+                <li><label>Nombre empleado <input type="text" id="inputNombre"/></label><span class="error" id="spanNombre"/></li>
+                <li><label>Fecha de nacimiento <input type="date" id="inputFecha"/></label><span class="error" id="spanFecha"/></li>
+                <li><label>DNI <input type="text" id="inputDni"/></label><span class="error" id="spanDni"/></li>
                 <span id="spanError"/>
             </ul>
             <br/>
