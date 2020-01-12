@@ -7,6 +7,7 @@ let inputDni;
 
 let spanDni;
 let spanNombre;
+let spanFecha;
 let spanError;
 
 let botonNuevoEmpleado;
@@ -18,6 +19,10 @@ let validarDni = () => {
 
 let validarNombre = () => {
     return spanNombre.innerHTML = Validar.validarNombre(inputNombre.value);
+}
+
+let validarFecha = () =>{
+    return spanFecha.innerHTML = Validar.validarFecha(inputFecha.value);
 }
 
 let crearVentana = () => {
@@ -45,11 +50,12 @@ function iniciar() {
     inputDni = document.getElementById("inputDni");
     spanDni = document.getElementById("spanDni");
     spanNombre = document.getElementById("spanNombre");
-    //spanFecha = document.getElementById("spanFecha");
+    spanFecha = document.getElementById("spanFecha");
     spanError = document.getElementById("errorFormulario");
 
     inputDni.addEventListener("blur", validarDni);
     inputNombre.addEventListener("blur", validarNombre);
+    inputFecha.addEventListener("blur", validarFecha);
 
     botonNuevoEmpleado = document.getElementById("nuevoEmpleado");
     botonNuevoEmpleado.addEventListener("click", crearVentana);
