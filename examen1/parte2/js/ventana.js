@@ -26,7 +26,7 @@ let validarFecha = () =>{
 }
 
 let crearVentana = () => {
-    let cadenaError = validarDni() + validarNombre();
+    let cadenaError = validarDni() + validarNombre() + validarFecha();
     if (cadenaError.length == 0) {
         let empleado = new Empleado(inputNombre.value, inputFecha.value, inputDni.value);
         empleado.crearVentana();
