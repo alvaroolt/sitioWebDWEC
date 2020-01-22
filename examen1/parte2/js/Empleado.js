@@ -27,6 +27,7 @@ Empleado.prototype.crearVentana = function () {
         `<!DOCTYPE html>
         <html lang="es">
             <head>
+                <title>Examen DWEC Diciembre 2019 | Álvaro Leiva Toledano | Empleado confirmado</title>
                 <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
                 <link rel="stylesheet" type="text/css" href="css/estilos.css">
             </head>
