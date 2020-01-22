@@ -39,7 +39,7 @@ function abrirDeTodoUnPoco() {
 }
 
 function abrirFormularioEmpleado() {
-    let ventana = open("", "", "width=500,height=300,top=45,left=700")
+    let ventana = open("", "", "width=500,height=300,top=45,left=500")
     let contenidoPagina = `
     <!DOCTYPE html>
     <html">

@@ -22,7 +22,7 @@ Empleado.prototype.getDni = function () {
 }
 
 Empleado.prototype.crearVentana = function () {
-    let ventana = window.open("", "", "");
+    let ventana = window.open("", "", "width=500,height=300,top=75,left=700");
     ventana.document.write(
         `<!DOCTYPE html>
         <html lang="es">
