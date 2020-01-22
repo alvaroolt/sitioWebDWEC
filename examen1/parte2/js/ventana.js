@@ -1,17 +1,6 @@
 /**
     @author: ALVARO LEIVA TOLEDANO
 */
-let inputNombre;
-let inputFecha;
-let inputDni;
-
-let spanDni;
-let spanNombre;
-let spanFecha;
-let spanError;
-
-let botonNuevoEmpleado;
-
 
 let validarDni = () => {
     return spanDni.innerHTML = Validar.validarDni(inputDni.value);
@@ -45,19 +34,19 @@ let limpiarFormulario = () => {
 }
 
 function iniciar() {
-    inputNombre = document.getElementById("inputNombre");
-    inputFecha = document.getElementById("inputFecha");
-    inputDni = document.getElementById("inputDni");
-    spanDni = document.getElementById("spanDni");
-    spanNombre = document.getElementById("spanNombre");
-    spanFecha = document.getElementById("spanFecha");
-    spanError = document.getElementById("errorFormulario");
+    let inputNombre = document.getElementById("inputNombre");
+    let inputFecha = document.getElementById("inputFecha");
+    let inputDni = document.getElementById("inputDni");
+    let spanDni = document.getElementById("spanDni");
+    let spanNombre = document.getElementById("spanNombre");
+    let spanFecha = document.getElementById("spanFecha");
+    let spanError = document.getElementById("errorFormulario");
 
     inputDni.addEventListener("blur", validarDni);
     inputNombre.addEventListener("blur", validarNombre);
     inputFecha.addEventListener("blur", validarFecha);
 
-    botonNuevoEmpleado = document.getElementById("nuevoEmpleado");
+    let botonNuevoEmpleado = document.getElementById("nuevoEmpleado");
     botonNuevoEmpleado.addEventListener("click", crearVentana);
 }
 

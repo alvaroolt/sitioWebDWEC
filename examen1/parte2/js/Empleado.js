@@ -38,7 +38,7 @@ Empleado.prototype.crearVentana = function () {
             <main>
                 <ul>
                     <li>Nombre: ${this.getNombre()}</li>
-                    <li>Dni: ${this.getDni()}</li>
+                    <li>DNI: ${this.getDni()}</li>
                     <li>Fecha: ${this.getFecha()}</li>
                 </ul>
             </main>
