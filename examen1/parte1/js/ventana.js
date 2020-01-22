@@ -71,10 +71,9 @@ function obtenerDiaSemanaHoy() {
 function mensajeMotivador() {
 
     let horas = Number(obtenerHoraActual());
-    let minutos = Number(obtenerMinutosActuales());
     let mensaje = "Son las " + obtenerHora() + ". ";
 
-    if (horas > 18 || (horas == 18 && minutos > 0))
+    if (horas >= 18)
         mensaje += "Ya es hora de que dejes de trabajar. Hay que conciliar la vida laboral con la familiar.";
     else if (horas >= 8 && horas < 18)
         mensaje += "Pronto llegan las vacaciones. Aguanta.";
