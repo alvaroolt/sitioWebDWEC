@@ -10,10 +10,22 @@ function escribirInfoPagina() {
     document.getElementById("diaSemanaActual").innerHTML = "Hoy es " + obtenerDiaSemanaHoy() + ".";
     document.getElementById("mensajeInformativo").innerHTML = mensajeMotivador();
 }
-
+/*
 let hoy = new Date();
 let horas = new String(hoy.getHours());
 let minutos = new String(hoy.getMinutes());
+*/
+function calcularDia() {
+    return new Date();
+}
+
+function calcularHora() {
+    return new String(calcularDia().getHours());
+}
+
+function calcularMinutos() {
+    return new String(calcularDia().getMinutes());
+}
 
 function obtenerHoraMinutosActual(horaOMinutos) {
 
@@ -26,11 +38,11 @@ function obtenerHoraMinutosActual(horaOMinutos) {
 
 function obtenerHora() {
 
-    return obtenerHoraMinutosActual(horas) + ":" + obtenerHoraMinutosActual(minutos);
+    return obtenerHoraMinutosActual(calcularHora() + ":" + obtenerHoraMinutosActual(calcularMinutos()));
 }
 
 function obtenerDiaSemanaHoy() {
-    let dia = hoy.getDay();
+    let dia = calcularDia().getDay();
 
     switch (dia) {
         case 1:
@@ -53,7 +65,10 @@ function obtenerDiaSemanaHoy() {
 
 function mensajeMotivador() {
 
-    horas = Number(obtenerHoraMinutosActual(horas));
+    setInterval(calcularHora, 1000);
+    setInterval(calcularMinutos, 1000);
+
+    let horas = Number(obtenerHoraMinutosActual(calcularHora));
     let mensaje = "Son las " + obtenerHora() + ". ";
 
     if (horas >= 18)
