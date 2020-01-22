@@ -12,28 +12,21 @@ function escribirInfoPagina() {
 }
 
 let hoy = new Date();
+let horas = new String(hoy.getHours());
+let minutos = new String(hoy.getMinutes());
 
-function obtenerHoraActual() {
-    let horas = new String(hoy.getHours());
+function obtenerHoraMinutosActual(horaOMinutos) {
 
-    if (horas.length == 1)
-        horas = "0" + horas;
-
-    return horas;
-}
-
-function obtenerMinutosActuales() {
-    let minutos = new String(hoy.getMinutes());
-
-    if(minutos.length == 1)
-        minutos = "0" + minutos;
+    if(horaOMinutos.length == 1)
+        horaOMinutos = "0" + horaOMinutos;
     
-    return minutos;
+    return horaOMinutos;
+    
 }
 
 function obtenerHora() {
 
-    return obtenerHoraActual() + ":" + obtenerMinutosActuales();
+    return obtenerHoraMinutosActual(horas) + ":" + obtenerHoraMinutosActual(minutos);
 }
 
 function obtenerDiaSemanaHoy() {
@@ -70,7 +63,7 @@ function obtenerDiaSemanaHoy() {
 
 function mensajeMotivador() {
 
-    let horas = Number(obtenerHoraActual());
+    horas = Number(obtenerHoraMinutosActual(horas));
     let mensaje = "Son las " + obtenerHora() + ". ";
 
     if (horas >= 18)
