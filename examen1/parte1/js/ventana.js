@@ -17,11 +17,11 @@ let minutos = new String(hoy.getMinutes());
 
 function obtenerHoraMinutosActual(horaOMinutos) {
 
-    if(horaOMinutos.length == 1)
+    if (horaOMinutos.length == 1)
         horaOMinutos = "0" + horaOMinutos;
-    
+
     return horaOMinutos;
-    
+
 }
 
 function obtenerHora() {
@@ -32,33 +32,23 @@ function obtenerHora() {
 function obtenerDiaSemanaHoy() {
     let dia = hoy.getDay();
 
-    let diaEnLetra;
-
     switch (dia) {
         case 1:
-            diaEnLetra = "lunes";
-            break;
+            return "lunes";
         case 2:
-            diaEnLetra = "martes";
-            break;
+            return "martes";
         case 3:
-            diaEnLetra = "miércoles";
-            break;
+            return "miércoles";
         case 4:
-            diaEnLetra = "jueves";
-            break;
+            return "jueves";
         case 5:
-            diaEnLetra = "viernes";
-            break;
+            return "viernes";
         case 6:
-            diaEnLetra = "sábado";
-            break;
+            return "sábado";
         default:
-            diaEnLetra = "domingo";
-            break;
+            return "domingo";
     }
 
-    return diaEnLetra;
 }
 
 function mensajeMotivador() {
